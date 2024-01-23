@@ -26,11 +26,11 @@ while keep_going != 'n':
     for b in range(1, user_input + 1):
         print("\t=", end=' ')
     print()
-    # Print rows using double for loop (FORMATTING ISSUES)
+    # Print rows using double for loop (FORMATTING ISSUES WITH LARGE NUMBERS)
     for x in range(1, user_input + 1):
         print(f"{x} |", end=' ')
         for y in range(1, user_input + 1):
-            print(f"{x * y}  ", end=' ')
+            print(f"{x * y}", end='\t')
         print()
     print()
     # Ask user to continue main program while loop, end loop if 'n'
